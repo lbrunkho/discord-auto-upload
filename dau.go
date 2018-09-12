@@ -285,6 +285,7 @@ func processFile(config Config, file string) {
 
 			log.Printf("Uploaded to %s %dx%d", a.URL, a.Width, a.Height)
 			log.Printf("id: %d, %d bytes transferred in %.2f seconds (%.2f KiB/s)", res.ID, a.Size, elapsed.Seconds(), rate)
+			sleep 3000
 			break
 		}
 	}
